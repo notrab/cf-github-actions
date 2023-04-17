@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-     using: node16
+    using: node16
     name: Deploy
     steps:
       - uses: actions/checkout@v2
