@@ -14,4 +14,6 @@ jobs:
       - name: "Install"
         run: npm install
       - name: "Deploy"
-        run: CLOUDFLARE_API_TOKEN=${{ env.CF_API_TOKEN }} npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ env.CF_API_TOKEN }}
+        run: wrangler deploy --env $ENVIRONMENT
