@@ -16,4 +16,4 @@ jobs:
       - name: "Deploy"
         env:
           CLOUDFLARE_API_TOKEN: ${{ env.CF_API_TOKEN }}
-        run: npx wrangler deploy --env $ENVIRONMENT
+        run: npx wrangler deploy
